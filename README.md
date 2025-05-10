@@ -1,2 +1,2 @@
 # MathGlossaire
-Glossaire des formule de math
+Glossaire des formules de math
