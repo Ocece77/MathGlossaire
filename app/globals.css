@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+    /* CSS HEX */
+  --color-amber: #ffbe0bff;
+  --color-orange-pantone: #fb5607ff;
+  --color-neon-green: #58fc2bff;
+  --color-rose: #ff006eff;
+  --color-blue-violet: #8338ecff;
+  --color-electric-blue: #1fe9ffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  /*Rien mais je garde au cas où*/
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  height:100%;
+  width:100%;
+}
+
