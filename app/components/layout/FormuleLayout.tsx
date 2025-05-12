@@ -1,6 +1,6 @@
 'use client';
 import { data } from '@/app/interface/data';
-import React, { useState } from 'react';
+import React from 'react';
 import { ArrowRightIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 
@@ -28,7 +28,9 @@ const FormuleLayout = ({ data }: Props) => {
     <div className="container mx-auto py-20 px-5">
       {/* Début Navigation/ Routing */}
       <div className="flex flex-wrap items-center gap-2 capitalize text-zinc-500 mb-10">
-        <Link href={`/lecon/${data.level}`}>{data.level}</Link>
+      <Link href={`/tous-les-cours`}>Cours</Link>
+      <ChevronRightIcon className="size-4" />
+        <Link href={`/classe/${data.level}`}>{data.level}</Link>
         <ChevronRightIcon className="size-4" />
         <h1 className="text-zinc-100">{data.title}</h1>
       </div>
@@ -45,7 +47,6 @@ const FormuleLayout = ({ data }: Props) => {
               {data.level}
             </span>
           </h1>
-          <div></div>
         </header>
 
         <section className="font-mono">
@@ -60,7 +61,7 @@ const FormuleLayout = ({ data }: Props) => {
             <ArrowRightIcon className="size-4" />
             <p className="font-mono">Pour comprendre le concept !</p>
           </div>
-          {data.exercices}
+          <div>{data.formula}</div>
         </section>
 
         <hr />

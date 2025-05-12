@@ -7,14 +7,16 @@ type link = {
   link: string;
   name: string;
   classname?: string;
+  onClick?: () => void;
 };
 
-export const NavLink = ({ link, name, classname }: link) => {
+export const NavLink = ({ link, name, classname, onClick }: link) => {
   const pathname = usePathname();
 
   return (
     <div>
       <Link
+        onClick={() => onClick && onClick()}
         href={link}
         className={`${pathname === link ? styles.linkActive : styles.linkDefault} ${classname} transition-all`}
       >

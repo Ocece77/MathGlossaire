@@ -75,11 +75,24 @@ export const SideBar = () => {
 
           {/*Début de la liste par principal */}
           <div className="flex flex-col justify-center gap-4 border-b-1 border-zinc-500 py-5">
-            <NavLink link="/" name="Accueil" classname="hover:text-rose" />
+            <NavLink link="/" name="Accueil" classname="hover:text-rose"   onClick={() =>
+                            window.innerWidth < 768 && setStyle(false)
+                          } />
             <NavLink
-              link="/mini-jeux"
-              name="Mini jeux"
+              link="/tous-les-exercices"
+              name="Exercices"
               classname="hover:text-rose"
+              onClick={() =>
+                window.innerWidth < 768 && setStyle(false)
+              }
+            />
+            <NavLink
+              link="/tous-les-cours"
+              name="Tous les cours"
+              classname="hover:text-rose"
+              onClick={() =>
+                window.innerWidth < 768 && setStyle(false)
+              }
             />
           </div>
           {/*Fin de la liste par principal */}

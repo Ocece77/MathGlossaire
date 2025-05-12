@@ -1,16 +1,24 @@
 const menuSixieme = [
   {
+    name:"Tous les cours",
+    link:"/classe/sixieme"
+  },
+  {
     name: 'Addition',
-    link: '/lecon/sixieme/cours/addition',
+    link: '/classe/sixieme/cours/addition',
   },
   {
     name: 'Soustraction',
-    link: '/lecon/sixieme/cours/soustraction',
+    link: '/classe/sixieme/cours/soustraction',
   },
 ];
 
 
 const menuCinquieme = [
+  {
+    name:"Tous les cours",
+    link:"/classe/cinquieme"
+  },
   {
     name: 'En cours',
     link: '/',
@@ -19,12 +27,20 @@ const menuCinquieme = [
 
 const menuQuatrieme = [
   {
+    name:"Tous les cours",
+    link:"/classe/quatrieme"
+  },
+  {
     name: 'En cours',
     link: '/',
   },
 ];
 
 const menuTroisieme = [
+  {
+    name:"Tous les cours",
+    link:"/classe/troisieme"
+  },
   {
     name: 'En cours',
     link: '/',
@@ -33,20 +49,29 @@ const menuTroisieme = [
 
 const menuSeconde = [
   {
+    name:"Tous les cours",
+    link:"/classe/seconde"
+  },
+  {
     name: 'Règle des parenthèses',
-    link: '/lecon/seconde/cours/regle-de-parentheses',
+    link: '/classe/seconde/cours/regle-de-parentheses',
   },
   {
     name: 'Développement',
-    link: '/lecon/seconde/cours/developpement',
+    link: '/classe/seconde/cours/developpement',
   },
   {
     name: 'Factorisation',
-    link: '/lecon/seconde/cours/factorisation',
+    link: '/classe/seconde/cours/factorisation',
   },
 ];
 
 const menuPremiere = [
+  {
+    name:"Tous les cours",
+    link:"/classe/premiere"
+  },
+  
   {
     name: 'En cours',
     link: '/',
@@ -55,12 +80,20 @@ const menuPremiere = [
 
 const menuTerminale = [
   {
+    name:"Tous les cours",
+    link:"/classe/terminale"
+  },
+  {
     name: 'En cours',
     link: '/',
   },
 ];
 
 const menuSIO = [
+  {
+    name:"Tous les cours",
+    link:"/classe/btssio"
+  },
   {
     name: 'En cours',
     link: '/',

@@ -1,4 +1,4 @@
-import Addition from "../lecon/sixieme/exercices/Addition";
+import Addition from "../classe/sixieme/exercices/Addition";
 
 export const exercices = {
   Addition

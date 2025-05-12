@@ -13,7 +13,9 @@ const CoursLayout = ({ level }: Props) => {
     <div className="container mx-auto py-20 px-5">
       {/* Début Navigation/ Routing */}
       <div className="flex flex-wrap items-center gap-2 capitalize text-zinc-500 mb-10">
-        <Link href={`/lecon/${level}`}>{level}</Link>
+        <Link href={`/tous-les-cours`}>Cours</Link>
+        <ChevronRightIcon className="size-4" />
+        <Link href={`/classe/${level}`}>{level}</Link>
         <ChevronRightIcon className="size-4" />
       </div>
       {/* Fin Navigation/ Routing */}
@@ -32,7 +34,7 @@ const CoursLayout = ({ level }: Props) => {
                 el.level == level && (
                   <li key={i}>
                     <NavLink
-                      link={`/lecon/${level}/cours/${el.id}`}
+                      link={`/classe/${level}/cours/${el.id}`}
                       name={el.title}
                       classname={'hover:underline '}
                     />

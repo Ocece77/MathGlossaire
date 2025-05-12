@@ -1,4 +1,4 @@
-import AdditionFormule from "../lecon/sixieme/formules/AdditionFormule";
+import AdditionFormule from "../classe/sixieme/formules/AdditionFormule";
 
 
 export const formules = {
