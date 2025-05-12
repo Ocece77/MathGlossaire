@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-12 `}
+        className={`relative ${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-12 `}
       >
         <SideBar />
         <div className="md:block md:col-span-3 hidden">

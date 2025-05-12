@@ -1,6 +1,6 @@
 import React from 'react'
 
-const formuleDeSeconde = () => {
+const Addition = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const formuleDeSeconde = () => {
   )
 }
 
-export default formuleDeSeconde
+export default Addition

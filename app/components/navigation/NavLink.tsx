@@ -6,17 +6,17 @@ import styles from './css/NavLink.module.css';
 type link = {
   link: string;
   name: string;
-  colorHover?: string;
+  classname?: string;
 };
 
-export const NavLink = ({ link, name, colorHover }: link) => {
+export const NavLink = ({ link, name, classname }: link) => {
   const pathname = usePathname();
 
   return (
     <div>
       <Link
         href={link}
-        className={`${pathname === link ? styles.linkActive : styles.linkDefault} hover:${colorHover} transition-all`}
+        className={`${pathname === link ? styles.linkActive : styles.linkDefault} ${classname} transition-all`}
       >
         {name}
       </Link>

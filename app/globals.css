@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "daisyui";
 
 :root {
@@ -11,24 +11,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-    /* CSS HEX */
+  /* CSS HEX */
   --color-amber: #ffbe0bff;
   --color-orange-pantone: #fb5607ff;
   --color-neon-green: #58fc2bff;
   --color-rose: #ff006eff;
   --color-blue-violet: #8338ecff;
   --color-electric-blue: #1fe9ffff;
+  --color-neon-light-green : #01FE9F;
 }
 
 @media (prefers-color-scheme: dark) {
   /*Rien mais je garde au cas où*/
 }
 
-html, body {
+html,
+body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  height:100%;
-  width:100%;
+  width: 100%;
+  height: 100vh;
 }
-
